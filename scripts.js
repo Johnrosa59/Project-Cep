@@ -29,7 +29,10 @@ inputCEP.addEventListener("blur", async (e) => {
   try {
     const data = await fetch(
       `http://viacep.com.br/ws/${cepValue}/json/`,
-      options
+      options,
+      {
+        referrerPolicy: "unsafe_url",
+      }
     ).then((response) => response.json());
 
     paragraphCEP.innerHTML = data.cep;
