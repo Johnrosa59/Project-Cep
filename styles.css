@@ -22,7 +22,7 @@ body {
 
 }
 
-#container-inputs {
+#container-input {
     margin: 200px;
     width: 400px;
     height: 500px;
@@ -57,17 +57,6 @@ input {
     padding-top: 20px;
 }
 
-#find {
-    height: 50px;
-    width: 200px;
-    margin-left: 96px;
-    border-radius: 5px;
-}
-
-#find:hover {
-    opacity: 0.6;
-}
-
 #clear {
     height: 50px;
     width: 200px;
@@ -94,4 +83,46 @@ input {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    #container-input {
+        width: 600px;
+        height: 500px;
+    }
+
+    #container-result {
+        width: 300px;
+        height: 200px;
+        padding-left: 0px;
+        padding-top: 20px;
+        margin: 30px;
+    }
+
+    #p-title-cep {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        top: 30px;
+
+    }
+
+    input {
+        margin-top: 30px;
+        display: block;
+        width: 250px;
+        height: 50px;
+        margin-left: 65px;
+        margin-bottom: 0;
+    }
+
+    #clear {
+        height: 50px;
+        width: 200px;
+        margin-left: 80px;
+        margin-top: 0;
+        border-radius: 5px;
+    }
 }
